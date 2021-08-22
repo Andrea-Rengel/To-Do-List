@@ -1,0 +1,126 @@
+/*Fonts*/
+
+@font-face {
+    font-family: 'Eczar';
+    font-style: normal;
+    font-weight: 600;
+    font-display: swap;
+    src: url(https://fonts.gstatic.com/s/eczar/v9/BXRovF3Pi-DLmzX6KPt90Wo.woff2) format('woff2');
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+@font-face {
+    font-family: 'Merriweather';
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src: url(https://fonts.gstatic.com/s/merriweather/v25/u-440qyriQwlOrhSvowK_l5-fCZM.woff2) format('woff2');
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+} 
+
+/*All*/
+
+html, body {
+    padding: 0;
+    margin: 0;
+    background-color: #C8CDE5;
+    color: #FFA040;
+}
+
+/*Container*/
+
+.container {
+    width: 100%;
+}
+
+h1 {
+    font-family: 'Eczar';
+    font-size: 45px;
+    text-align: center;
+}
+
+/*Form*/
+
+.error {
+    text-align: center;
+    color: #FF0000;
+    font-size: 19px;
+    font-weight: bold;
+}
+
+form {
+    display: flex;
+    justify-content: center;
+}
+
+.input {
+    height: 33px;
+    width: 30%;
+    background-color: #FFFFFF;
+    color: #000000;
+    font-size: 15px;
+    font-weight: bold;
+    border: 2px solid transparent;
+    border-radius: 10px;
+    padding: 0 40px 0 10px;
+    transition: .5s ease all;
+}
+
+.input:focus {
+    border: 2px solid #0075FF;
+    outline: none;
+}
+
+.btn {
+    height: 38px;
+    width: 5%;
+    background-color: #1D1F20;
+    color: #FFFFFF;
+    font-weight: bold;
+    border: none;
+    border-radius: 10px;
+    font-size: 15px;
+    cursor: pointer;
+    margin-left: 2px;
+    transition: .1s ease all;
+}
+
+.btn:hover {
+    background-color: #FFAB66;
+}
+
+/*List*/
+
+ul {
+    text-align: center;
+    list-style-type: none;
+}
+
+.btn-delete {
+    background-color: #C8CDE5;
+    color: #FF0000;
+    cursor: pointer;
+    border: none;
+    font-size: 11px;
+    position: relative;
+    font-weight: bold;
+    font-family: 'Merriweather';
+    bottom: 5px;
+}
+
+li p{
+    display: inline;
+    margin-right: 8px;
+    line-height: 50px;
+    font-family: 'Merriweather';
+    font-weight: bold;
+    font-size: 19px;
+}
+
+/*Empty div*/
+
+.empty p{
+    text-align: center;
+    font-family: 'Merriweather';
+    font-weight: bold;
+}
